@@ -1,0 +1,26 @@
+@import './variables';
+@import './errors';
+
+.Accordion {
+  background: $accordion-background-color;
+  padding: $accordion-padding;
+  width: 100%;
+
+  > .Accordion-title {
+    color: $accordion-text-color;
+    margin-bottom: 20px;
+    padding: 7px 10px;
+  }
+
+  > .Accordion-title:not(.is-active) + .Accordion-description {
+    display: none;
+  }
+
+  > .Accordion-description {
+    color: $accordion-text-color;
+  }
+
+  > .Accordion-description .Accordion-text {
+    line-height: 1.5em;
+  }
+}

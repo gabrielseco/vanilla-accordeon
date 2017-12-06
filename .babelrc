@@ -1,0 +1,12 @@
+{
+  "plugins": ["transform-flow-strip-types"],  
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
+      }
+    }
+  ],
+    "stage-3"
+  ]
+}
