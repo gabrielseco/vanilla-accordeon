@@ -1,0 +1,7 @@
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  background: linear-gradient(to right, $from 0%, $to $stop);
+
+  background-color: $from;
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to', GradientType=1);
+}
