@@ -15,19 +15,18 @@
   display: none;
 }
 
-.Accordion-description {
-  color: $accordion-text-color;
-}
-
-.Accordion-description:last-of-type {
+.Accordion-title:last-of-type {
   padding-bottom: $accordion-padding;
 }
 
+.Accordion-description {
+  color: $accordion-text-color;
+}
 
 .Accordion-description .Accordion-text {
   line-height: 1.5em;
 }
 
 .Accordion-separator:last-child {
-  display: none;
+  height: 0;
 }
