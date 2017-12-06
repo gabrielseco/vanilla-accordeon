@@ -1,0 +1,10 @@
+.u-flexbox-sticky {
+  @include flexbox();
+  @include flex-direction(column);
+  min-height: 100vh;
+}
+
+.u-flex-1 {
+  flex: 1;
+}
+

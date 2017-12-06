@@ -5,3 +5,11 @@
 @mixin align-content($align) {
   align-items: $align;
 }
+
+@mixin justify-content($justify) {
+  justify-content: $justify;
+}
+
+@mixin flex-direction($direction) {
+  flex-direction: $direction;
+}

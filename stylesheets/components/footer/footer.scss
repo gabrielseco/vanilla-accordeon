@@ -1,0 +1,11 @@
+@import 'variables';
+
+.Footer {
+  @include flexbox();
+  @include align-content(center);
+  @include justify-content(space-between);
+  background: $background-color;
+  color: $text-color;
+  height: $footer-height;
+  padding: $footer-padding;
+}
