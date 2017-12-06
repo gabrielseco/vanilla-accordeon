@@ -38,7 +38,8 @@ export class Item {
       <dt class="${classes}">${this.item.title}</dt>
       <dd class="Accordion-description">
         <p class="Accordion-text">${this.item.description}</p>
-      </dt>
+      </dd>
+      <hr class="Accordion-separator" aria-hidden="true"></hr>
     `;
   }
 }

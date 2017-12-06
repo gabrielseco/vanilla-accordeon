@@ -35,8 +35,9 @@ describe('Item class', () => {
     expect(html).toBe(`
       <dt class="Accordion-title">${title}</dt>
       <dd class="Accordion-description">
-        <p>${description}</p>
-      </dt>
+        <p class="Accordion-text">${description}</p>
+      </dd>
+      <hr class="Accordion-separator" aria-hidden="true"></hr>
     `);
   });
 
@@ -46,8 +47,9 @@ describe('Item class', () => {
     expect(html).toBe(`
       <dt class="Accordion-title is-active">${title}</dt>
       <dd class="Accordion-description">
-        <p>${description}</p>
-      </dt>
+        <p class="Accordion-text">${description}</p>
+      </dd>
+      <hr class="Accordion-separator" aria-hidden="true"></hr>
     `);
   });
 });

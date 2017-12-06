@@ -3,24 +3,31 @@
 
 .Accordion {
   background: $accordion-background-color;
-  padding: $accordion-padding;
   width: 100%;
+}
 
-  > .Accordion-title {
-    color: $accordion-text-color;
-    margin-bottom: 20px;
-    padding: 7px 10px;
-  }
+.Accordion-title {
+  color: $accordion-text-color;
+  padding: $accordion-padding;
+}
 
-  > .Accordion-title:not(.is-active) + .Accordion-description {
-    display: none;
-  }
+.Accordion-title:not(.is-active) + .Accordion-description {
+  display: none;
+}
 
-  > .Accordion-description {
-    color: $accordion-text-color;
-  }
+.Accordion-description {
+  color: $accordion-text-color;
+}
 
-  > .Accordion-description .Accordion-text {
-    line-height: 1.5em;
-  }
+.Accordion-description:last-of-type {
+  padding-bottom: $accordion-padding;
+}
+
+
+.Accordion-description .Accordion-text {
+  line-height: 1.5em;
+}
+
+.Accordion-separator:last-child {
+  display: none;
 }
