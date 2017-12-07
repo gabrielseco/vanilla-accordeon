@@ -32,44 +32,18 @@
   top: -9999px;
 }
 
-/* .Accordion-title.is-active + .Accordion-description {
-  animation-duration: 0.5s;
-  animation-name: fadeInFromNone;
-} */
-
 .Accordion-description .Accordion-text {
   line-height: 1.5em;
   margin-left: $accordion-margin-left-text;
 }
 
 .Accordion-separator {
-  border-width: 0.5px;
+  background: $accordion-text-color;
+  height: 1px;
   opacity: 0.8;
+  width: 100%;
 
-  &:last-child {
-    height: 0;    
+  &:last-of-type {
+    height: 0;
   }
 }
-
-/* @keyframes fadeInFromNone {
-  0% {
-    opacity: 0;
-    position: absolute;
-  }
-
-  1% {
-    opacity: 0;
-    position: relative;
-  }
-
-  50% {
-    opacity: 0.5;
-    position: relative;
-  }
-
-  100% {
-    opacity: 1;
-    position: relative;
-  }
-} */
-

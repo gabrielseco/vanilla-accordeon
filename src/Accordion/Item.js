@@ -39,7 +39,7 @@ export class Item {
       <dd class="Accordion-description">
         <p class="Accordion-text">${this.item.description}</p>
       </dd>
-      <hr class="Accordion-separator" aria-hidden="true"></hr>
+      <dd class="Accordion-separator" aria-hidden="true"></dd>
     `;
   }
 }

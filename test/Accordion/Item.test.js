@@ -37,7 +37,7 @@ describe('Item class', () => {
       <dd class="Accordion-description">
         <p class="Accordion-text">${description}</p>
       </dd>
-      <hr class="Accordion-separator" aria-hidden="true"></hr>
+      <dd class="Accordion-separator" aria-hidden="true"></dd>
     `);
   });
 
@@ -49,7 +49,7 @@ describe('Item class', () => {
       <dd class="Accordion-description">
         <p class="Accordion-text">${description}</p>
       </dd>
-      <hr class="Accordion-separator" aria-hidden="true"></hr>
+      <dd class="Accordion-separator" aria-hidden="true"></dd>
     `);
   });
 });
