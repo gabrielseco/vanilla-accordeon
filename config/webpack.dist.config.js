@@ -7,6 +7,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const CSS_FILENAME = 'css/[name].[hash].css';
 
+const {
+  TITLE,
+} = require('./env/dev.env');
+
 module.exports = {
   devtool: 'source-map',
   output: {
@@ -23,7 +27,7 @@ module.exports = {
     new webpack.optimize.ModuleConcatenationPlugin(),
     new ExtractTextPlugin(CSS_FILENAME),
     new HtmlWebpackPlugin({
-      title: 'Vanilla Example',
+      title: TITLE,
       template: './assets/index.html',
       inject: 'body',
       minify: {

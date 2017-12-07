@@ -3,9 +3,11 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const env = require('./env/dev.env');
+const {
+  HOST, PORT, PROTOCOL, TITLE,
+} = require('./env/dev.env');
 
-const { HOST, PORT, PROTOCOL } = env;
+
 const CSS_FILENAME = 'css/main.css';
 
 module.exports = {
@@ -24,23 +26,24 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin(CSS_FILENAME),
     new HtmlWebpackPlugin({
-      title: 'Vanilla Example',
+      title: TITLE,
       template: './assets/index.html',
       inject: 'body',
     }),
   ],
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: ExtractTextPlugin.extract({
-        use: ['css-loader', 'sass-loader', 'postcss-loader'],
-      }),
-    },
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-    },
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          use: ['css-loader', 'sass-loader', 'postcss-loader'],
+        }),
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
     ],
   },
 };
