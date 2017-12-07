@@ -7,5 +7,11 @@
   background: $background-color;
   color: $text-color;
   height: $footer-height;
+  opacity: 0.9;
   padding: $footer-padding;
+
+  &-icon {
+    margin: 0 2px;
+  }
 }
+
