@@ -1,1 +1,7 @@
-module.exports = require('./config/postcss.conf');
+/* eslint-disable */
+module.exports = {
+  plugins: [
+    require('autoprefixer')({}),
+  ],
+};
+
