@@ -42,7 +42,12 @@ module.exports = {
     rules: [{
       test: /\.scss$/,
       use: ExtractTextPlugin.extract({
-        use: ['css-loader', 'sass-loader', 'postcss-loader'],
+        fallback: 'style-loader',
+        use: [
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       }),
     },
     {
