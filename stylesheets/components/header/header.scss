@@ -3,12 +3,12 @@
 .Header {
   @include flexbox();
   @include align-content(center);
-  background: $background-color;
+  background: $header-background-color;
   height: $header-height;
   opacity: 0.88;
   padding: $header-padding;
 
   > .Header-title {
-    color: $text-color;
+    color: $header-text-color;
   }
 }
