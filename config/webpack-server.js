@@ -1,10 +1,12 @@
-/* eslint-disable */
+/* eslint-disable import/no-extraneous-dependencies  */
+/* eslint-disable consistent-return  */
+
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
-const env = require('./env/dev.env')
+const env = require('./env/dev.env');
 
-const { HOST, PORT } = env;
+const { HOST, PORT } = env;
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
