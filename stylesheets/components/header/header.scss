@@ -8,7 +8,7 @@
   opacity: 0.9;
   padding: $header-padding;
 
-  > .Header-title {
+  &-title {
     color: $header-text-color;
   }
 }

@@ -12,7 +12,7 @@ export class Errors {
 
   renderError(message: string) {
     const error = `<p class="error">${message}</p>`;
-    let template = `<h2>${this.className} Errors</h2>`;
+    let template = `<h2 class="error-text">${this.className} Errors</h2>`;
     template += error;
     this.renderer.render(template);
   }
