@@ -7,6 +7,7 @@ describe('Apply classes', () => {
       hidden: false,
     })).toBe('notification');
   });
+
   it('should test the classes utility with zero class', () => {
     expect(applyClasses({
       notification: false,
